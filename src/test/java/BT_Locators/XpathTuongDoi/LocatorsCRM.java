@@ -26,12 +26,12 @@ public class LocatorsCRM {
         driver.findElement(By.xpath("//div[@class='panel_s']")).click();
 
         //cách xđ bằng text()
-        //driver.findElement(By.xpath("//span[normalize-space()='Customers']")).click();
-        //driver.findElement(By.xpath("//a[normalize-space()='New Customer']")).click();
+        driver.findElement(By.xpath("//span[normalize-space()='Customers']")).click();
+        driver.findElement(By.xpath("//a[normalize-space()='New Customer']")).click();
 
         //cách xđ bằng hàm contains()
-       //driver.findElement(By.xpath("//span[contains(text(),'Customers')]")).click();
-       //driver.findElement(By.xpath("//a[contains(@class,'btn btn-primary mright5 test pull-left display-block')]")).click();
+       driver.findElement(By.xpath("//span[contains(text(),'Customers')]")).click();
+       driver.findElement(By.xpath("//a[contains(@class,'btn btn-primary mright5 test pull-left display-block')]")).click();
 
         Thread.sleep(2000);
 
