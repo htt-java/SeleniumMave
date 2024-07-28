@@ -19,9 +19,8 @@
 *.tar.gz
 *.rar
 bin/
-.idea/
+.idea
 out/
-target/
 *.png
 *.jpg
 *.mp4
