@@ -8,6 +8,7 @@ import java.time.Duration;
 
 public class LocatorsCRM {
     public static void main(String[] args) throws InterruptedException {
+        //khởi tạo
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
@@ -19,19 +20,25 @@ public class LocatorsCRM {
         driver.findElement(By.xpath("//button[normalize-space()='Login']")).click();
         Thread.sleep(3000);
 
-        //xpath menu Customer
-        //cách xđ bằng thuộc tính @
-        driver.findElement(By.xpath("//a[@href='https://crm.anhtester.com/admin/clients']")).click();
-        driver.findElement(By.xpath("//a[@class='btn btn-primary mright5 test pull-left display-block']")).click();
-        driver.findElement(By.xpath("//div[@class='panel_s']")).click();
 
-        //cách xđ bằng text()
-        driver.findElement(By.xpath("//span[normalize-space()='Customers']")).click();
+        driver.findElement(By.xpath("//ul[@id='side-menu']//span[normalize-space()='Customers']")).click();
         driver.findElement(By.xpath("//a[normalize-space()='New Customer']")).click();
 
-        //cách xđ bằng hàm contains()
-       driver.findElement(By.xpath("//span[contains(text(),'Customers')]")).click();
-       driver.findElement(By.xpath("//a[contains(@class,'btn btn-primary mright5 test pull-left display-block')]")).click();
+
+        driver.findElement(By.xpath("//input[@id='company']"));
+        driver.findElement(By.xpath("//input[@id='vat']"));
+        driver.findElement(By.xpath("//input[@id='phonenumber']"));
+        driver.findElement(By.xpath("//input[@id='website']"));
+        driver.findElement(By.xpath("//button[@data-id='groups_in[]']"));
+        driver.findElement(By.xpath("//div[@app-field-wrapper='groups_in[]']//input[@type='search']"));
+        driver.findElement(By.xpath("//button[@data-id='default_currency']"));
+        driver.findElement(By.xpath("//button[@data-id='default_language']"));
+        driver.findElement(By.xpath("//textarea[@id='address']"));
+        driver.findElement(By.xpath("//input[@id='city']"));
+        driver.findElement(By.xpath("//input[@id='state']"));
+        driver.findElement(By.xpath("//input[@id='zip']"));
+        driver.findElement(By.xpath("//div[@app-field-wrapper='country']//input[@type='search']"));
+
 
         Thread.sleep(2000);
 
