@@ -35,8 +35,9 @@ public class LocatorsCRM6_10 {
         driver.findElement(By.xpath("//input[@id='start_date']/following-sibling::div"));
         driver.findElement(By.xpath("//input[@id='deadline']/parent::div"));
         driver.findElement(By.xpath("//input[@placeholder='Tag']"));
-
-
+        driver.findElement(By.xpath("//div[@app-field-wrapper='description']/descendant::div"));
+        driver.findElement(By.xpath("//label[normalize-space()='Send project created email']"));
+        driver.findElement(By.xpath("//button[normalize-space()='Save']"));
 
         Thread.sleep(2000);
         driver.quit();
