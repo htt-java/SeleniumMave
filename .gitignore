@@ -19,7 +19,7 @@
 *.tar.gz
 *.rar
 bin/
-.idea/
+*.idea/
 out/
 *.png
 *.jpg
@@ -27,8 +27,6 @@ out/
 *.avi
 .vscode/
 *.xml
-.gitignore
-.idea
 .xml
 .allure/
 allure-results/
