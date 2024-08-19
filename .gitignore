@@ -19,7 +19,7 @@
 *.tar.gz
 *.rar
 bin/
-*.idea/
+idea/
 out/
 *.png
 *.jpg
