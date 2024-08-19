@@ -19,7 +19,6 @@
 *.tar.gz
 *.rar
 bin/
-idea/
 out/
 *.png
 *.jpg
@@ -34,6 +33,7 @@ ExportData/
 ExtentReports/
 logs/
 target/
+.idea/
 test-output/
 reports/
 *.iml
