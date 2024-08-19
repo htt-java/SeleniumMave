@@ -27,6 +27,9 @@ out/
 *.avi
 .vscode/
 *.xml
+.gitignore
+.idea
+.xml
 .allure/
 allure-results/
 ExportData/
