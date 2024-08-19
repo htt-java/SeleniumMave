@@ -33,7 +33,15 @@ ExportData/
 ExtentReports/
 logs/
 target/
-.idea/
+.idea/compiler.xml
+.idea/compiler.xml
+.idea/encodings.xml
+.idea/jarRepositories.xml
+.idea/misc.xml
+.idea/uiDesigner.xml
+.idea/vcs.xml
+.idea/workspace.xml
+.idea/.gitignore
 test-output/
 reports/
 *.iml
